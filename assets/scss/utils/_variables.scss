@@ -310,7 +310,7 @@ $dark:          $gray-900 !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    $primary,
+  "primary":    #000,
   "secondary":  $secondary,
   "success":    $success,
   "info":       $info,
@@ -335,7 +335,7 @@ $escaped-characters: (
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:                true !default;
-$enable-rounded:              true !default;
+$enable-rounded:              false !default;
 $enable-shadows:              false !default;
 $enable-gradients:            false !default;
 $enable-transitions:          true !default;
@@ -376,9 +376,19 @@ $spacers: (
   0: 0,
   1: $spacer * .25,
   2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  3: $spacer * .75,
+  4: $spacer * .875,
+  5: $spacer,
+  6: $spacer * 1.125,
+  7: $spacer * 1.5,
+  8: $spacer * 2,
+  9: $spacer * 2.25,
+  10: $spacer * 2.5,
+  11: $spacer * 3,
+  12: $spacer * 3.75,
+  // 記得也要先複製一份初始設定，註解掉後再開始寫新設定喔!
+// scss-docs-start spacer-variables-maps
+
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -407,7 +417,7 @@ $body-text-align:           null !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-decoration:                         none !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -419,7 +429,8 @@ $stretched-link-z-index:                  1 !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+//$paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   0;
 
 
 // Grid breakpoints
@@ -581,12 +592,22 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+
+  7: $font-size-base * 4,
+  8: $font-size-base * 3.75,
+  9: $font-size-base * 3
+
+// $font-size-base 預設為 1rem，也就是 16px
+// 所以 .fs-1 就是 16 * 4 = 64px
+// 依此類推~
+
 ) !default;
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom:      $spacer * .5 !default;
+//$headings-margin-bottom:      $spacer * .5 !default;
+$headings-margin-bottom:      0;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
