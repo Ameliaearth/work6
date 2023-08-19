@@ -1,0 +1,44 @@
+.bg-img{
+    width:1296px;
+    height:518px;
+    object-fit: cover;
+    background-position: center;
+}
+
+.pos-r{
+    position:relative;
+}
+.list-2{
+    position:absolute;
+    top:48px;
+    left:48px;
+}
+.list-3{
+    position:absolute;
+    bottom:88px;
+}
+.list-4{
+    position:absolute;
+    bottom:24px;
+}
+
+.list-5{
+    a{
+        &:hover{
+            background: #C96464;
+        }
+    }
+}
+.item-5{
+    max-width:416px;
+    height:auto;
+}
+
+.main{
+    .item-3{
+        padding: 35px 58px;
+    }
+    .item-4{
+        padding: 38px 50px;
+    }
+}

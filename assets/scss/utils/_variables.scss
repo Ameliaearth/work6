@@ -310,7 +310,7 @@ $dark:          $gray-900 !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    #000,
+  "primary":    #F3F1E5,
   "secondary":  $secondary,
   "success":    $success,
   "info":       $info,
@@ -385,10 +385,6 @@ $spacers: (
   9: $spacer * 2.25,
   10: $spacer * 2.5,
   11: $spacer * 3,
-  12: $spacer * 3.75,
-  // 記得也要先複製一份初始設定，註解掉後再開始寫新設定喔!
-// scss-docs-start spacer-variables-maps
-
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -408,7 +404,7 @@ $position-values: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
+$body-bg:                   #F3F1E5 !default;
 $body-color:                $gray-900 !default;
 $body-text-align:           null !default;
 
@@ -593,16 +589,14 @@ $font-sizes: (
   4: $h4-font-size,
   5: $h5-font-size,
   6: $h6-font-size,
-
   7: $font-size-base * 4,
   8: $font-size-base * 3.75,
   9: $font-size-base * 3
-
+) !default;
 // $font-size-base 預設為 1rem，也就是 16px
 // 所以 .fs-1 就是 16 * 4 = 64px
 // 依此類推~
 
-) !default;
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables

@@ -1,6 +1,21 @@
-body{
-    font-family: "Yeseva One", "cursive" , "Noto Sans TC", "sans-serif";
-    margin:0 auto;
-    padding: 0 72px;
+*,
+*::before,
+*::after {
+    box-sizing:border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+body{
+    font-family: "Yeseva One", "Noto Serif TC", serif;
+    line-height: 1.5;
+}
+
+.container{
+    margin:0 auto;
+    max-width: 1296px;
+}

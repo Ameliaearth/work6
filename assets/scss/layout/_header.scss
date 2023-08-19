@@ -9,6 +9,10 @@ h1 a{
   background-size: contain;
   background-repeat: no-repeat;
 }
-
-
-
+.item-1{
+  a{
+    &:hover{
+      color: #9C9E18;
+    }
+  }
+}
