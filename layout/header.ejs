@@ -1,28 +1,41 @@
 
-<header class="container-fluid border-dark border-bottom border-2">
-    <nav class="navbar">
-        <div class="d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <h1><a class="me-7 me-5" href="#">logo</a></h1>
-                <a class="d-flex align-items-center text-dark" href="index.html">
-                    <h2 class="me-1 fs-2">7TAO</h2>
-                    <p class="me-3">活動訂票網</p>
-                </a>
-                <form class="d-flex" role="search">
-                    <input class="border border-dark py-3 px-4" type="text" placeholder="探索活動" aria-label="text">
-                    <button class="border border-dark bg-dark text-white">
-                        <i class="px-3 py-3 icofont-search-1"></i></button>
-                </form>
-            </div>
-            <div class="item-1 d-flex align-items-center collapse navbar-collapse" id="memberCenter">
-                <a class="text-dark me-4" href="#"><i class="icofont-ui-file">REGISTER</i></a>
-                <a class="text-dark" href="#"><i class="icofont-ui-user">LOGIN</i></a>
+<div class="container-fluid border-dark border-bottom border-2 border-md-3 mb-8">
+    <div class="container py-md-7 py-3 d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <h1><a class="me-sm-5 me-7" href="#">logo</a></h1>
+            <a class="d-flex align-items-center text-dark me-11 d-lg-flex d-none" href="#">
+                <h2 class="me-1 fs-2 me-4">7TAO</h2>
+                <p class="me-3">活動訂票網</p>
+            </a>
+            <div class="d-flex" role="search">
+                <input class="border border-dark px-md-7 px-3 py-5 ps-8" type="text" placeholder="探索活動" aria-label="text">
+                <button class="px-5 py-5 border border-dark bg-dark text-white list-unstyled">
+                    <li class="icon icofont-search-1"></li>
+                </button>
             </div>
         </div>
-    </nav>
-</header>
+
+        <div class="item-1 d-flex align-items-center d-none d-md-flex gap-2">
+            <a class="fw-bolder text-dark" href="#"><i class="me-1 icofont-ui-file">REGISTER</i></a>
+            <a class="fw-bolder text-dark" href="#"><i class="me-1 icofont-ui-user">LOGIN</i></a>
+        </div>
+
+        <div class="d-md-nonee d-block btn-menu">
+            <a class="btn btn-outline-primary rounded-3" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i class="icofont-navigation-menu"></i>
+            </a>
+        </div>
+    </div>
+    <div class="btn-menu-collapse d-md-none collapse" id="collapseExample">
+        <a class="d-flex flex-column gap-18 border-0 border-top border-bottom border-2 py-7 px-3" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <i class="fw-bolder text-dark me-1 icofont-ui-file">REGISTER</i>
+            <i class="fw-bolder text-dark me-1 icofont-ui-user">LOGIN</i>
+        </a>
+    </div>
+</div>
 
 
 <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#memberCenter">
                 <span class="navbar-toggler-icon "></span>
+                <i class="icofont-navigation-menu"></i>
             </button>-->
